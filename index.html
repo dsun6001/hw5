@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--  
+GUI Assignment: hw5
+David Sun, UMass Lowell Computer Science, david_sun@student.uml.edu 
+Copyright (c) 2023 by David Sun. All rights reserved. May be freely copied 
+or excerpted for educational purposes with credit to the author. 
+updated by DS on December 19, 2023 at 11:32\
+Worked with: Bikash Shrestha
+-->
+
+<html>
+    <head>
+        <title>Scrabble</title>
+        <!-- link to external css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <!-- Scrabble logo downloaded from: https://1000logos.net/scrabble-logo/-->
+            <img src = "images/Scrabble-Logo-1948.png" alt="Scrabble Logo" class="center" id="logo">  
+        </header>
+        <div id="scoreboard">
+            <!-- Placeholder for the current word being formed -->
+            <div>
+                <div class="label">Word: <span id="word"></span></div>
+            </div>
+            <!-- Placeholder for the total score and current score -->
+            <div>
+                <div class="label">Score: <span id="total-score">0</span>(+<span id="cur-score"></span>)</div>
+            </div>
+            <!-- Placeholder for the number of remaining tiles -->
+            <div>
+                <div class="label">Remaining tiles: <span id="bag"></span></div>
+            </div>
+        </div>
+
+        <!-- Scrabble board -->
+        <div id="board"></div>
+
+        <!-- Next Word and reset Buttons -->
+        <div id="buttons">
+            <button id="next-word">Next Word</button>
+            <button id="reset">Reset</button>
+        </div>
+
+        <!-- Rack of letters -->
+        <div id="rack"></div>
+       
+        
+        
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
